@@ -55,7 +55,7 @@ int main( int argc, char** argv )
     // 使用四元数旋转一个向量，使用重载的乘法即可
     v_rotated = q*v; // 注意数学上是 qvq^{-1}
     cout<<"(1,0,0) after rotation = "<<v_rotated.transpose()<<endl;
-    
+    //除几何操作外，还有求解线性方程组的比较
     Eigen::Matrix<double,100,1>matrix_N1;
     matrix_N1=Eigen::MatrixXd::Random(100,1);
     Eigen::Matrix<double,100,100>A;
